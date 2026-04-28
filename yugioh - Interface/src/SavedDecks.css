@@ -1,0 +1,133 @@
+/* Saved Decks Page Styles */
+.saved-decks-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.saved-decks-page h1 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--gold-primary);
+    margin: 0;
+}
+
+.create-deck-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+    color: #0a0a0f;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all var(--transition-smooth);
+}
+
+.create-deck-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+.login-prompt,
+.loading {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 60px 20px;
+}
+
+/* Decks Grid */
+.decks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* Individual Deck Card */
+.saved-deck-card {
+    background: var(--bg-glass);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    transition: all var(--transition-smooth);
+}
+
+.saved-deck-card:hover {
+    border-color: var(--gold-primary);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.saved-deck-card .deck-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.saved-deck-card .deck-card-header h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+}
+
+.saved-deck-card .card-count {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.saved-deck-card .deck-preview-images {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px;
+    min-height: 60px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.saved-deck-card .deck-preview-images img {
+    width: 50px;
+    height: auto;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.saved-deck-card .deck-preview-images .no-cards {
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+.saved-deck-card .deck-stats {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+/* Action Buttons */
+
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--bg-glass);
+    border: 1px dashed var(--border-subtle);
+    border-radius: var(--radius-lg);
+}
+
+.empty-state p {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}

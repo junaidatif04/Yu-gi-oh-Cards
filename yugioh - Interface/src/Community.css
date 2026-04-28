@@ -1,0 +1,121 @@
+/* Community Page Styles */
+.community-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.community-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.community-page h1 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--gold-primary);
+    margin: 0;
+}
+
+.filter-controls {
+    display: flex;
+    gap: 12px;
+    background: var(--bg-glass);
+    padding: 4px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-subtle);
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-smooth);
+}
+
+.filter-btn:hover {
+    color: var(--text-primary);
+}
+
+.filter-btn.active {
+    background: var(--purple-primary);
+    color: white;
+}
+
+/* Community Card Specifics */
+.community-card .deck-card-header {
+    align-items: flex-start;
+}
+
+.community-card .header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.community-card .author {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+/* Vote Controls */
+.vote-stats {
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    border-radius: var(--radius-md);
+}
+
+.vote-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.vote-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 4px;
+    line-height: 1;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.vote-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.vote-btn.up:hover,
+.vote-btn.up.active {
+    color: #4caf50;
+    /* Green */
+}
+
+.vote-btn.down:hover,
+.vote-btn.down.active {
+    color: #f44336;
+    /* Red */
+}
+
+.vote-score {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    min-width: 24px;
+    text-align: center;
+}
