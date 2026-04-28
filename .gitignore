@@ -1,0 +1,25 @@
+# Secrets
+secrets.txt
+Backend-RAG Agent/serviceAccountKey.json
+Backend-RAG Agent/.env
+
+# Python
+__pycache__/
+*.py[oc]
+.venv/
+venv/
+.python-version
+
+# Node
+node_modules/
+dist/
+.firebase/
+.firebaserc
+firebase.json
+firestore.indexes.json
+firestore.rules
+.vite/
+
+# Logs
+*.log
+ngrok.log

@@ -1,10 +1,11 @@
 import discord
 import aiohttp
+import os
 from discord.ext import commands
 from discord import app_commands
 
 # --- 1. CONFIGURATION ---
-TOKEN = "YOUR_DISCORD_BOT_TOKEN" # Replace with your actual token 
+TOKEN = os.getenv("DISCORD_TOKEN", "YOUR_DISCORD_BOT_TOKEN") 
 API_URL = "http://127.0.0.1:8000/chat"
 
 # --- 2. BOT SETUP ---
