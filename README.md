@@ -10,28 +10,28 @@ A cutting-edge, full-stack AI platform designed to empower Yu-Gi-Oh! duelists. T
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-### 🧠 Dual-Brain RAG Architecture
+###  Dual-Brain RAG Architecture
 Our backend isn't just a chatbot; it's a specialized search engine that uses a **Router Agent** to navigate two distinct knowledge bases:
 - **Brain #1 (The Librarian)**: Powered by **Pandas**, this brain handles exact card statistics (ATK, DEF, Level, Type) from a localized JSON database.
 - **Brain #2 (The Strategist)**: Powered by **ChromaDB** and **Vector Search**, this brain retrieves complex strategy tips, combos, and rulings from a high-dimensional vector space.
 
-### 💻 Premium Web Interface
+### Premium Web Interface
 Built with **React** and **TypeScript**, the frontend offers a sleek, modern experience:
 - **AI Chat Hub**: Interactive, context-aware chat with the Duel Expert.
 - **Deck Builder**: Professional deck building tools with Firebase integration.
 - **Community Sharing**: Share and discover decks from the community.
 - **Admin Analytics**: Real-time logging and performance tracking via Firebase Firestore.
 
-### 🤖 Discord Integration
+###  Discord Integration
 Bring the AI Expert to your server:
 - `/card [name]`: Instant card lookup with high-quality images.
 - `/ask [question]`: Ask for strategy advice, counters, or ruling clarifications.
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 | Layer | Technologies |
 | :--- | :--- |
@@ -42,7 +42,7 @@ Bring the AI Expert to your server:
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - **Node.js** (v16+)
@@ -105,12 +105,4 @@ Bring the AI Expert to your server:
 
 ---
 
-## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request or open an Issue for any bugs or feature requests.
 
-## 📄 License
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-Developed with ❤️ for the Yu-Gi-Oh! Community by **junaidatif04**.
