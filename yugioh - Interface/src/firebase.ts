@@ -3,7 +3,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBQSMaqJuw3Qiht4YpFzjE3sWrGVqSIxSM",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "no-vibe-code.firebaseapp.com",
   projectId: "no-vibe-code",
   storageBucket: "no-vibe-code.firebasestorage.app",

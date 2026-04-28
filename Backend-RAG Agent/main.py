@@ -13,9 +13,27 @@ from firebase_admin import credentials, firestore
 from datetime import datetime
 
 # --- 1. CONFIGURATION ---
-# 🔑 PASTE YOUR WORKING API KEY HERE
-os.environ["GOOGLE_API_KEY"] = "AIzaSyAmLX2GYWdu94WHdFqOsVcJJOX94hpxoDc" 
-genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+def load_secrets():
+    """Loads secrets from the root secrets.txt file"""
+    secrets_path = os.path.join(os.path.dirname(__file__), "..", "secrets.txt")
+    if os.path.exists(secrets_path):
+        with open(secrets_path, "r") as f:
+            for line in f:
+                # Only parse lines that look like KEY="VALUE"
+                if "=" in line and not line.strip().startswith("{") and not line.strip().startswith("}"):
+                    parts = line.strip().split("=", 1)
+                    if len(parts) == 2:
+                        key, value = parts
+                        os.environ[key] = value.strip('"').strip("'")
+
+load_secrets()
+
+# 🔑 API Key is now loaded from secrets.txt
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+if not GOOGLE_API_KEY:
+    print("⚠️ WARNING: GOOGLE_API_KEY not found in environment or secrets.txt")
+
+genai.configure(api_key=GOOGLE_API_KEY)
 
 # Initialize Firebase Admin
 # NOTE: Ensure 'serviceAccountKey.json' is in the same directory or use proper env setup

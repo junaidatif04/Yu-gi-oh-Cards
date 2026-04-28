@@ -2,6 +2,7 @@
 secrets.txt
 Backend-RAG Agent/serviceAccountKey.json
 Backend-RAG Agent/.env
+yugioh - Interface/.env
 
 # Python
 __pycache__/
